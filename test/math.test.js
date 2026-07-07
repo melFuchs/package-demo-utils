@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { sum, average } from '../src/math';
+import { sum, average } from '../src/math.js';
 
 describe('math utils', () => {
     it ('calculates sum of several numbers', () => {

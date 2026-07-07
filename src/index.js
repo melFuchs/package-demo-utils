@@ -1,2 +1,2 @@
-export { average, sum } from './math';
-export { capitalize, reverse } from './string';
+export { average, sum } from './math.js';
+export { capitalize, reverse } from './string.js';
