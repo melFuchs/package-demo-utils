@@ -16,10 +16,10 @@
     "src"
   ],
   "repository": {
-    "url": "git+https://github.com/melfuchs/package-demo-utils.git"
+    "url": "git+https://github.com/melFuchs/package-demo-utils.git"
   },
   "bugs": {
-    "url": "git+https://github.com/melfuchs/package-demo-utils/issues",
+    "url": "https://github.com/melFuchs/package-demo-utils/issues",
     "email": "mel.fuchs.72@googlemail.com"
   },
   "scripts": {
