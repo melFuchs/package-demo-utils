@@ -1,0 +1,31 @@
+name: Publish Semantic Release
+
+on:
+  push:
+    branches:
+    - main
+
+permissions:
+  id-token: write
+  contents: write
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v7
+      with:
+        fetch-depth: 0
+        persist-credentials: false
+
+    - uses: actions/setup-node@v6
+      with:
+        node-version: lts/*
+        registry-url: https://registry.npmjs.org
+
+    - run: npm i --no-save conventional-changelog-conventionalcommits semantic-release
+
+    - run: npx semantic-release
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

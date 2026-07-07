@@ -1,0 +1,68 @@
+/**
+ * @type {import('semantic-release').GlobalConfig}
+ */
+export default {
+  branches: [ "main" ],
+  repositoryUrl: "git+https://github.com/melfuchs/package-demo-utils.git",
+  plugins: [
+    [
+      "@semantic-release/commit-analyzer",
+      {
+        preset: "conventionalcommits",
+        parserOpts: {
+          noteKeywords: [ "breaking change", "breaking changes" ]
+        },
+        releaseRules: [
+          { breaking: true, release: "major" },
+          { type: "feat", release: "minor" },
+          { type: "fix", release: "patch" },
+          { type: "perf", release: "patch" },
+          { type: "refactor", release: "patch" },
+          { type: "docs", release: "patch" },
+          { type: "style", release: "patch" },
+          { type: "test", release: false },
+          { type: "chore", release: false },
+          { type: "ci", release: false }
+        ]
+      }
+    ],
+
+    [
+      "@semantic-release/release-notes-generator",
+      {
+        preset: "conventionalcommits",
+        presetConfig: {
+          types: [
+            { type: "feat", section: "Features" },
+            { type: "fix", section: "Bug Fixes" },
+            { type: "perf", section: "Performance" },
+            { type: "refactor", section: "Refactoring" },
+            { type: "docs", section: "Documentation" },
+            { type: "style", section: "Code Style" }
+          ]
+        },
+        writerOpts: {
+          groupBy: "type",
+          commitGroupsSort: "title",
+          commitsSort: [ "scope", "subject" ]
+        }
+      }
+    ],
+
+    [
+      "@semantic-release/npm",
+      {
+        npmPublish: true
+      }
+    ],
+
+    [
+      "@semantic-release/github",
+      {
+        successComment: false,
+        failComment: false,
+        releasedLabels: false
+      }
+    ]
+  ]
+};
