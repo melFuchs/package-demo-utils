@@ -1,14 +1,20 @@
 {
   "name": "@melfuchs/package-demo-utils",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
   "description": "Utility package with basic math and string helper functions",
-  "keywords": ["utils", "math", "string"],
+  "keywords": [
+    "utils",
+    "math",
+    "string"
+  ],
   "license": "MIT",
   "exports": {
     ".": "./src/index.js"
   },
-  "files": ["src"],
+  "files": [
+    "src"
+  ],
   "repository": {
     "url": "git+https://github.com/melfuchs/package-demo-utils.git"
   },
