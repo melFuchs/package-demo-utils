@@ -1,5 +1,5 @@
 {
-  "name": "@melFuchs/package-demo-utils",
+  "name": "@melfuchs/package-demo-utils",
   "version": "0.0.1",
   "type": "module",
   "description": "Utility package with basic math and string helper functions",
@@ -10,10 +10,10 @@
   },
   "files": ["src"],
   "repository": {
-    "url": "git+https://github.com/melFuchs/package-demo-utils.git"
+    "url": "git+https://github.com/melfuchs/package-demo-utils.git"
   },
   "bugs": {
-    "url": "git+https://github.com/melFuchs/package-demo-utils/issues",
+    "url": "git+https://github.com/melfuchs/package-demo-utils/issues",
     "email": "mel.fuchs.72@googlemail.com"
   },
   "scripts": {

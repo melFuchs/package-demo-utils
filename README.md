@@ -7,8 +7,8 @@ Utility package with basic **math** and **string** helper functions.
 ## Installation
 
 
-''' bash
+```bash
 npm install @melFuchs/package-demo-utils
-'''
+```
 
 
