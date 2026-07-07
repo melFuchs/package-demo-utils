@@ -2,14 +2,10 @@
   "name": "@mel/package-demo-utils",
   "version": "0.0.1",
   "type": "module",
-  
-  
-  "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "vitest"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "devDependencies": {
+    "vitest": "^4.1.10"
+  }
 }
