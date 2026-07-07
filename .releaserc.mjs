@@ -10,7 +10,7 @@ export default {
       {
         preset: "conventionalcommits",
         parserOpts: {
-          noteKeywords: [ "breaking change", "breaking changes" ]
+          noteKeywords: [ "BREAKING CHANGE", "BREAKING CHANGES" ]
         },
         releaseRules: [
           { breaking: true, release: "major" },
