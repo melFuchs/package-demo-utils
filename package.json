@@ -1,6 +1,6 @@
 {
   "name": "@melfuchs/package-demo-utils",
-  "version": "0.0.0.development",
+  "version": "0.0.0-development",
   "type": "module",
   "description": "Utility package with basic math and string helper functions",
   "keywords": [
