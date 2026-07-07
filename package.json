@@ -1,7 +1,10 @@
 {
-  "name": "@mel/package-demo-utils",
+  "name": "@melFuchs/package-demo-utils",
   "version": "0.0.1",
   "type": "module",
+  "exports": {
+    ".": "./src/index.js"
+  },
   "scripts": {
     "test": "vitest",
     "prepare": "husky"
