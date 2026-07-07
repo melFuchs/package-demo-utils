@@ -2,7 +2,7 @@
  * @type {import('semantic-release').GlobalConfig}
  */
 export default {
-  branches: [ "main" ],
+  branches: [ "master" ],
   repositoryUrl: "git+https://github.com/melfuchs/package-demo-utils.git",
   plugins: [
     [
