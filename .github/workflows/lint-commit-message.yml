@@ -13,8 +13,4 @@ jobs:
       with:
        fetch-depth: 0
 
-    - run: |
-       pwd
-       ls
-
     - uses: wagoid/commitlint-github-action@v6  
