@@ -4,14 +4,14 @@ import { sum, average } from '../src/math.js';
 describe('math utils', () => {
     it ('calculates sum of several numbers', () => {
         expect (
-            sum(1,2,3)
-        ).toBe(6); 
+            sum(1,2,3,4,5)
+        ).toBe(15);
     }); 
 
     it ('calculates average of several numbers', () => {
         expect (
-            average(1,2,3)
-        ).toBe(2); 
+            average(1,2,3,4,5)
+        ).toBe(3); 
     }); 
 }); 
 
