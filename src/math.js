@@ -12,3 +12,14 @@ export function average(...numbers){
     return sum (...numbers)/numbers.length; 
 }
 
+export function faculty(n){
+    if (n === 0){
+        throw new TypeError('faculty(n): n must be greater than 0');
+    }
+    let result = 1;
+    for (let i = 1; i <= n; i++){
+        result *= i;
+    }
+    return result;
+}
+
